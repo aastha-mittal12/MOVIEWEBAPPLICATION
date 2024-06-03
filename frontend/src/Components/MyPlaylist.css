@@ -1,0 +1,158 @@
+/* General container styling */
+.my-playlists {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+  min-width: 250px
+}
+
+/* Header styling */
+.my-playlists h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Playlist item styling */
+.my-playlists .playlist-item {
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-playlists .playlist-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Playlist link styling */
+.my-playlists a {
+  text-decoration: none;
+  color: #00a8e1;
+}
+
+/* Playlist name styling */
+.my-playlists h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+/* Playlist actions styling */
+.my-playlists .playlist-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.my-playlists .action-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #00a8e1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+/* Add spacing between icon and text */
+.my-playlists .action-icon svg {
+  margin-right: 5px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .my-playlists {
+    padding: 15px;
+  }
+  
+  .my-playlists h1 {
+    font-size: 2em;
+  }
+
+  .my-playlists h2 {
+    font-size: 1.4em;
+  }
+
+  .my-playlists .playlist-actions {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-playlists {
+    padding: 10px;
+  }
+  
+  .my-playlists h1 {
+    font-size: 1.8em;
+  }
+
+  .my-playlists h2 {
+    font-size: 1.3em;
+  }
+
+  .my-playlists .playlist-actions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .my-playlists .playlist-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .my-playlists .playlist-actions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .my-playlists h1 {
+    font-size: 1.6em;
+  }
+
+  .my-playlists h2 {
+    font-size: 1.2em;
+  }
+
+  .my-playlists .action-icon {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-playlists {
+    padding: 5px;
+  }
+  
+  .my-playlists h1 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .my-playlists h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .my-playlists .action-icon {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}

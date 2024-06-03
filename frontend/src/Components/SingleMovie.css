@@ -1,0 +1,30 @@
+.single-movie-container {
+    
+    width:80vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #232f3e; /* Dark background similar to Prime Video */
+    color: white; /* Text color */
+
+  }
+  .imgbox {
+    width: 80vw;
+  }
+  
+  .card-img-top {
+    width: 80vw;
+    height: 50vh;
+    object-fit: contain; /* Stretch the image to cover the entire container */
+  }
+  
+  .infobox {
+    width: 100%;
+    text-align: center;
+  }
+  button{
+    background-color: #3a9efc;
+    padding: 15px;
+    border-radius: 10px ;
+    color: white;
+    
+  }
