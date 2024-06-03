@@ -5,7 +5,7 @@ const FrontPage = () => {
   return (
     <div className="front-page">
       <div className="banner">
-        <h1>Welcome to COLD STAR</h1>
+        <h1>Welcome to COLDSTAR</h1>
         <p>Stream your favorite movies and shows</p>
       </div>
       
